@@ -1,0 +1,81 @@
+/* ## General Styling */
+:root {
+  --main-bg-color: lightgray;
+  --profile-accent-color: pink;
+  --box-bg-color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  background-color: var(--main-bg-color);
+  font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+main {
+  max-width: 800px;
+  margin: auto;
+}
+
+/* ## Profile Styling */
+.flex {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+}
+
+.avatar {
+  margin-top: 1.25rem;
+  height: 10rem;
+  width: 10rem;
+  margin-bottom: 15px;
+  background-color: var(--profile-accent-color);
+}
+
+.symbol {
+  display: flex;
+  font-size: 4rem;
+  margin-top: auto;
+  margin-left: 0.5rem;
+  user-select: none;
+}
+
+h2 {
+  margin: 0;
+  font-size: 28px;
+}
+
+/* ## Lists + Logs */
+.log {
+  border-top: 3px solid var(--profile-accent-color);
+  background-color: var(--box-bg-color);
+  font-family: "Courier New", Courier, monospace;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 1rem;
+  white-space: normal;
+  word-break: normal;
+}
+
+.list {
+  background-color: var(--box-bg-color);
+  padding: 0.2rem;
+  margin-bottom: 1rem;
+  font-size: 1em;
+}
+
+.list h3 {
+  margin: 1rem;
+  padding: 4px;
+  border-bottom: 1px solid var(--main-bg-color);
+}
+
+ul {
+  list-style-type: square;
+}
